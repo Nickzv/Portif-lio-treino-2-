@@ -1,0 +1,107 @@
+html,
+body {
+  height: 100vh;
+
+}
+body {
+  background-color: #000000;
+  
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+
+}
+.cabecalho-imagem{
+    height: 72px ;
+}
+
+
+.conteudo{
+    margin-bottom: 28px;
+    
+}
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.conteudo-principal-escrito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.conteudo-principal-escrito-titulo{
+  font-family: 'Poiret One', cursive;  
+  font-size: 6em;
+    text-align: center;
+    /* fundo gradiente */
+    background-image: linear-gradient(#2f00ff, #e200e2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+.conteudo-principal-escrito-subtitulo{
+  font-family: 'Martian Mono', monospace;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ECD6C4;
+}
+.conteudo-principal-escrito-button{
+  font-family: 'Martian Mono', monospace;    
+  background-color: #d735ff;
+    border: none;
+    border-radius: 20px;
+    width: 180px;
+    height: 60px;
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+
+}
+.conteudo-principal-escrito-button:hover {
+    background-color: rgb(255, 255, 255);
+  }
+
+  
+  /* squares */
+  body {
+    overflow: hidden;
+  }
+  .squares li {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 0.87);
+    display: block;
+    position: absolute;
+    bottom: -40px;
+    animation: up 0.2s infinite alternate;
+    z-index:-1;
+  }
+  
+  @keyframes up {
+    from {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-900px) rotate(900deg);
+    }
+  }
